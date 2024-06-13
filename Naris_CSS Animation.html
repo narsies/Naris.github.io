@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flower</title>
+        <style>
+            .div1 {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                border-radius: 100px 0;
+                background: rgb(11, 0, 170);
+                animation-name: rotate1;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            .div2 {
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                border-radius: 100px 0;
+                background-color:rgb(94, 0, 73);
+                animation-name: rotate2;
+                animation-duration: 1s;
+                animation-iteration-count: infinite; 
+            }
+
+            #trunk {
+                width: 20px;
+                height: 150px;
+                margin: auto;
+                margin-top: 1%;
+                background: rgb(49, 0, 139);
+                margin-bottom: 20%;
+                animation-name: translate;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .s1, .s2 {
+                display: inline-block;
+            }
+            .container1 {
+                animation-name: rotate;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .container2 {
+                display: flex;
+                margin-left: 35%;
+                margin-top: 2%;
+            }
+
+            
+            @keyframes rotate1 {
+                from {transform: rotateX(180deg);}
+                to {transform: rotateX(90deg);
+                    background:rgb(11, 0, 170);}
+            }
+
+            @keyframes rotate2 {
+                from {transform: rotateY(360deg);}
+                to {transform: rotateY(270deg);
+                    background: rgb(94, 0, 73);}
+            }
+
+            @keyframes rotate {
+                from {transform: rotate(0deg);}
+                to {transform: rotate(90deg);}
+            }
+
+            @keyframes translate {
+                0% {transform: translateY(150px);}
+                50% {transform: translateY(0px);}
+                100% {transform: translateY(100px);
+                        height:60px;
+                        background:rgb(11, 0, 170);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "container1">
+        <div class = "container2">
+                <div class = "s1">
+                    <div class = "div1" id = "div1"></div>
+                    <div class = "div2" id = "div2"></div>
+                </div>
+
+                <div class = "s2">
+                    <div class = "div2" id = "div3"></div>
+                    <div class = "div1" id = "div4"></div>
+                </div>
+        </div>
+</div>
+        <div id = "trunk"></div>
+
+    </body>
+</html>

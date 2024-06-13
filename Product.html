@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+   *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    color:#ff8c00;
+    font-size: 40px;
+    font-family: 'Century';
+    font-weight: bold;
+    float: left 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+    margin-left:100px;
+    }
+   
+    .bg {
+        background: linear-gradient(rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+        min-height: 650px;
+    }
+    .background{
+        width:800px;
+        margin-bottom:-650px;
+        margin-left:600px;
+        animation:fadeInUp 2s ease;
+    }
+   
+    .navbar-nav{
+    margin-left:50px;
+    float:right;
+    margin-top:-43px;
+    }
+    .nav-link{
+    color:black;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    float: right;
+    width: 120px;
+    height: 30px;
+    
+    }
+    .nav-link:hover{
+    color: #ff8c00;
+    transform: scale(0.98);
+    cursor: pointer;
+    }
+    .sign_but{
+    color:white;
+    background: black;
+    font-size: bold;
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-left:10px;
+    }
+    
+    .h4{
+    text-align: center;
+    color:white;
+    padding:20px;
+    font-weight: bold;
+    margin-top:70px;
+    margin-left:40px;
+    animation:fadeInRight 2s ease;
+    }
+    
+    h1{
+        font-weight: bold;
+        text-align: center;
+    }
+
+        .card-img-top{
+    width:130px;
+    padding: 20px;
+    margin-left:70px;
+    }
+    .card-img-top:hover{
+        width:140px;
+    padding: 20px;
+    margin-left:70px;
+    }
+    #shampoo_img{
+        width:100px;
+        margin-left:90px;
+        margin-top:-10px;
+    }
+    #shampoo_img:hover{
+        width:120px;
+        margin-left:90px;
+        margin-top:-10px;
+    }
+    
+    
+    .card{
+    border: 3px solid black;
+    text-align: center;
+    width:300px;
+    height:270px;
+    margin-top:30px;
+    margin-left:10px;
+    }
+    
+    .card-body{
+    padding: 20px;
+    margin-top: -15px;
+    margin-bottom:50px;
+    }
+    
+    .card-body h5{
+    color:black;
+    font-weight: bold;
+     }
+    .card-body p{
+    color:black;
+    font-size:15px;
+    }
+    
+    #footer{
+    color:white;
+}
+  
+.footercontainer{
+   width:1000px;
+   margin:auto;
+   display:flex;
+   justify-content: center;
+}
+
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align:center;
+}
+.contact {
+    width: 190px;
+    margin:auto;
+    padding:7px;
+}
+ ul{
+    text-align:center;
+}
+.list{
+    padding:0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding:7px;
+    position:relative;
+}
+.list li:before{
+    content:'';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height:2px;
+    background:white;
+    transition-duration: .5s;
+}
+.list li:hover:before{
+    width:70px;
+}
+.social-icons{
+    text-align:center;
+    padding:0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align:center;
+    padding:5px;
+}
+.social-icons i{
+    color:white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+.social-icons i:hover,a:hover{
+    color:#ff8c00;
+}
+.footerBottom{
+    background:black;
+    text-align: center;
+    padding:5px 0;
+}
+.footerBottom p{
+    color:white;
+    margin:0;
+    font-size: 12px;
+}
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(50px);
+        }
+        
+        100% {
+            transform: translateY(0px);
+        }
+    }
+      
+            
+     </style>
+</head>
+<body>
+    <div class="bg">
+        <div><img class="background" src="sheesh.png"></div>
+        <nav class="navbar navbar-expand-sm bg-transparent navbar-dark" id="header">
+            <div class="container-fluid">
+                <div class="icon">
+                    <h2 class="logo">VetPro</h2>
+                </div>
+                <div class="container-fluid" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link"   href="Landing_page.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About_Us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"   href="Services_final.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="Product.html">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="C:\Users\Geneses\Downloads\jbguctcvgv\SIGN_IN.html"><button class="sign_but">SIGN IN</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="C:\Users\Geneses\Downloads\jbguctcvgv\SIGN_UP.html"><button class="sign_but">SIGN UP</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col">
+                <div class="h4"> Discover our extensive catalog of high-quality pet products, 
+                    carefully selected to meet all your pet’s needs.
+                    <blockquote></blockquote>
+                    <blockquote> From 
+                    nutritious food and treats to toys, grooming supplies, and
+                     accessories, we have everything to keep your furry friends
+                     happy and healthy.</blockquote> Browse our collection and find the 
+                      perfect items for your pets!</div>
+            </div>
+            <div class="col">
+                        </div>
+                    </div>
+                </div>    
+        <div class="container-fluid bg-white py-3" id="offer">
+            <h1>Products</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="   https://scontent.xx.fbcdn.net/v/t1.15752-9/442457813_480950764375382_3550361904645825544_n.jpg?stp=dst-jpg_s403x403&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG7c5BrAhKGAjrdioMT3rF8VAQECHos5I9UBAQIeizkj6jIMrjwYzX6A3kIEHjEszXkK_YSpi5jNh-gWUIhLv-2&_nc_ohc=5QpdrMmAwtYQ7kNvgHofhWH&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEsfqvgEZj-fDXJ1xGAmDE6bEHZFxfFturP3a2adbPsBw&oe=667E49F3  " class="card-img-top" alt="sched">
+                        <div class="card-body">
+                            <h5 class="card-title">890.00</h5>
+                            <p class="card-text">Space Capsule Cat Carrier Backpack for Small Dogs
+                                Airline Approved Pet Travel Bag with Transparent Window Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="   https://cdn.fbsbx.com/v/t59.2708-21/446114180_899745695523190_7907661317519273751_n.gif?_nc_cat=109&ccb=1-7&_nc_sid=cf94fc&_nc_eui2=AeGKIqRaP5xc9i2nURHE2l0_owHrvGWWNdijAeu8ZZY12H0pQVxgaMgDlt0whC5HR3NUsIPrDaEJL8dzHQtAAve4&_nc_ohc=XTeTNd-KXrQQ7kNvgGy6GyH&_nc_ht=cdn.fbsbx.com&oh=03_Q7cD1QGCo-qsKGyvQNtPcGuIt_OoGpIpWni9ezAyJ8OKDtoKxA&oe=6658D474 " class="card-img-top" id="shampoo_img" alt="record-keeping">
+                        <div class="card-body">
+                            <h5 class="card-title">105.00</h5>
+                            <p class="card-text">Nematocide Dewormer for pets 15/60 ml</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436645900_750070307336761_7660985480182402156_n.jpg?stp=dst-jpg_p403x403&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF5Rfv7SiVAUNE_kWY40Tts-4hj6oY3CW77iGPqhjcJbp8CjPV_7ebSt7VCGf2XZtt_LhEBE_tammwR5-b4p5B6&_nc_ohc=oYDXfc7iNSAQ7kNvgFYfbYy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QElymqYWJ3ww2BjoOM8iDJdrcsL_KmyjE8nEXUm9nAASQ&oe=667E52AB" class="card-img-top" alt="catalog">
+                        <div class="card-body">
+                            <h5 class="card-title">80.00</h5>
+                            <p class="card-text">Soft silicone pet bath Massage Gloves for  dog and cats safety accessories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436678872_1661523501288675_8091671947774379876_n.jpg?stp=dst-jpg_p403x403&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzbNe3PD87UAXQquWithREbodl6xavMDhuh2XrFq8wOHoBwtpMsOdYKQ_aXb2zAXzKEznNk8FOV_A5lcnQydGa&_nc_ohc=Z-IU-zMQpgEQ7kNvgEVbgHt&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QF7y5igjjBHPmVm4IyPg3qic1WneUlmUkFeW-qeFEHy3g&oe=667E3439" class="card-img-top" alt="sched">
+                        <div class="card-body">
+                            <h5 class="card-title">80.00</h5>
+                            <p class="card-text">Electric pet brush grooming and massage and Hair removal tool</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-3" id="offer">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436642089_756456939985861_7600599812503858214_n.jpg?stp=dst-jpg_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEeft6vT1__3MaF5CQZHI_rJHrJnkl0zc0kesmeSXTNzY7OJBSQjcJ5M0u7BLkuNNRfV9UVSrw1TU-xmpr_CxbK&_nc_ohc=IfAjt5_yfzkQ7kNvgH4b0YW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFhb6b7jrK2pKux1oVb1ZHUqpJ8P0bs3Ksdzeb601_tzA&oe=667E5EDA" class="card-img-top" alt="sched">
+                        <div class="card-body">
+                            <h5 class="card-title">399.00t</h5>
+                            <p class="card-text">PetGeek Automatic Dog treat dispenser, Dog puzzle memory training</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441927178_1548189299093256_7525458455252165627_n.jpg?stp=dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEJhf_bURmf5Jg5lp9wS5Pv47vVlinJn6Dju9WWKcmfoNBd22dTo_ICDtE9MzOuHrY90_2GbU01-FG1A6fFiyeM&_nc_ohc=f2O_K7ftAjkQ7kNvgGVT7zy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFdtNZvffAjNXpVP02FizL-yrdNnUug_6aBBVsanBaImw&oe=667E6372" class="card-img-top" id="dispenser_img" alt="record-keeping">
+                        <div class="card-body">
+                            <h5 class="card-title">450.00</h5>
+                            <p class="card-text">Elevon automatic dog and cats Gravity food  and water dispenser</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441938295_300440136454732_2870026897419637290_n.jpg?stp=dst-jpg_p403x403&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGfKDQ6PNpI1W6S0wQtRVxVWnBKxoQVYG5acErGhBVgbmlCrERxAKcb0ftt8X9wULKDu_Gb4KxyT3ytwoFIlxBO&_nc_ohc=Qlnm2WWZJIcQ7kNvgFHjS0P&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEih7Lfev2v1T3zrm9fiY3yJ1QQceiObdk9oX9qp_APsw&oe=667E4ED3" class="card-img-top" alt="catalog">
+                        <div class="card-body">
+                            <h5 class="card-title">149.00</h5>
+                            <p class="card-text">Whiskas Ocean Fish Flavor freshly Packed 500g/1kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/363868659_6866762750001876_6161549706595005280_n.jpg?stp=dst-jpg_s403x403&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEf4_11RPh_rPywDN6pZBuZ2uGHC16IoCza4YcLXoigLPW3NH8ArhuYNcqFNqG9b19WaDwfizEHvPMXjSSzrNSt&_nc_ohc=c018ps1YJhIQ7kNvgFT2SoU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGpl4R0BjyVFaKhIJlVG_F6I5EXnXYvNYg_bmbwYbQmdg&oe=667E5F71Bhttps://scontent.xx.fbcdn.net/v/t1.15752-9/363868659_6866762750001876_6161549706595005280_n.jpg?stp=dst-jpg_s403x403&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEf4_11RPh_rPywDN6pZBuZ2uGHC16IoCza4YcLXoigLPW3NH8ArhuYNcqFNqG9b19WaDwfizEHvPMXjSSzrNSt&_nc_ohc=c018ps1YJhIQ7kNvgFT2SoU&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGpl4R0BjyVFaKhIJlVG_F6I5EXnXYvNYg_bmbwYbQmdg&oe=667E5F71" class="card-img-top" alt="catalog">
+                        <div class="card-body">
+                            <h5 class="card-title">99.00</h5>
+                            <p class="card-text">Selective Juniors Rabbit Food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white py-3" id="offer">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436640009_807156511023620_2363379314237392300_n.jpg?stp=dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEwb_sKe0WcLj8e7gVeik-0z1tp_5yRKnXPW2n_nJEqdaN91kZfAf0-BEwRhY45Yd8pVoMvEMkr1gY8NZzDv61P&_nc_ohc=x2Z4smL4_icQ7kNvgGUxNxo&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHaNP20YFfyR077CpDZEuzmPrPKtMG_dDCAdiiDqfdmhw&oe=667E5E24" class="card-img-top" alt="sched">
+                        <div class="card-body">
+                            <h5 class="card-title">79.00</h5>
+                            <p class="card-text">Crispy Muesli Hamster Food for small animal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="  https://scontent.xx.fbcdn.net/v/t1.15752-9/436703945_431277016375696_4758349526766453447_n.jpg?stp=dst-jpg_p403x403&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGdIIMc_zVHHnb9gwRRwgGaOaRTE9czxpk5pFMT1zPGmSdTZBmkWfxgtVrOZ7B8jdigWAFpZ_ZZf_v0RNu8s6Kc&_nc_ohc=9UDLgJ4havcQ7kNvgGeccQ0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QENBPPKajnMnCPaSPJBeuIakUALbpWZSYcH82OJEyGeYA&oe=667E54D8 " class="card-img-top" id="dispenser_img" alt="record-keeping">
+                        <div class="card-body">
+                            <h5 class="card-title">299.00</h5>
+                            <p class="card-text">Small animal cage Rabbit hutch with wheels, removable tray, platform and ramp for bunny.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="  https://scontent.xx.fbcdn.net/v/t1.15752-9/436668541_7807405672657706_528694548616042042_n.jpg?stp=dst-jpg_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvE6Jkz968K_aFWGhmJQKqImsL_3x5-LQiawv_fHn4tHVYwfF92f3ueDdst6ZlDTGdzUaTeBcvcNTcFFD-7zNk&_nc_ohc=lE4G-tSO7MsQ7kNvgHyShQd&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHPgsobq0WQOwfllGDQq0HhscUsiYa0ynnW4XCCcduOzw&oe=667E3B35  " class="card-img-top" alt="catalog">
+                        <div class="card-body">
+                            <h5 class="card-title">149.00</h5>
+                            <p class="card-text">Mat for Dogs, Rabbit Pet feeding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="  https://scontent.xx.fbcdn.net/v/t1.15752-9/436667531_1105268970548459_8453453756402629803_n.jpg?stp=dst-jpg_s403x403&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE8K6g3y53veDhxkjg7eg2I1ulb_oJHVhXW6Vv-gkdWFQCnm3aatP9uE5MZm7z-rVwI7TK4xzZPmidEs6EY6n2D&_nc_ohc=ZyGZ_jkOiD0Q7kNvgFCNY4A&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGIRveXuv1CbrXU-uVNvaERsPuY2afSzObvJIvJP4IVWA&oe=667E52BD  " class="card-img-top" alt="catalog">
+                        <div class="card-body">
+                            <h5 class="card-title">199.00</h5>
+                            <p class="card-text">Cat litter Box for Cats Poop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container-fluid bg-white py-3" id="offer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441959976_1008305290696296_4890597864217335126_n.jpg?stp=dst-jpg_s403x403&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEf2i1qzVJM3V5v4nmpBxzgagyIVThKF6RqDIhVOEoXpBqnjLdL07co0tPRb01LZUXjKf8CDmKzVZnvMToX58Bc&_nc_ohc=yI1hk8i2Ad0Q7kNvgEkGQFv&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHe_hdyt7EMhZD58Pjy_Q8MUHZZuOtjJcgVyUvEREdvvA&oe=667E5FCF" class="card-img-top" alt="sched">
+                            <div class="card-body">
+                                <h5 class="card-title">49.00</h5>
+                                <p class="card-text">Cat collar With Bell Necklace Dog Collar Cat Pendant Pet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441948871_473651371994175_4841852033335732452_n.jpg?stp=dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFluRs-A4w5SRWKCUxI68PQfySaYN2QbAh_JJpg3ZBsCOVZgOhNH6r-5DeIGk6KDjcqLfmFNVEhhRi6XKw-Gt8A&_nc_ohc=A0baE_SJwuEQ7kNvgEA0MHF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG4sPnq6_O7NcZggov1F4A5HSTZcA1h801UTT9OVqFIIQ&oe=667E5E08 " class="card-img-top" id="dispenser_img" alt="record-keeping">
+                            <div class="card-body">
+                                <h5 class="card-title">200.00</h5>
+                                <p class="card-text">Bird Cage Toy Hanging Toys for Parrot love birds</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441173044_1916664212120774_4387756661077610288_n.jpg?stp=dst-jpg_p403x403&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEoadOTJdI_fMyWm4V7BrfbRKMZVNeOtWBEoxlU1461YGNWh7NO8repU9lhlnWfFBl4bgXL_HhgbB62Pu7kr6oT&_nc_ohc=tXk4CGwjYawQ7kNvgGb5IRu&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHlN_CvANepUD94h9292kZsJ3dbJ5UnM5QR0TkrK85neQ&oe=667E5FD4" class="card-img-top" alt="catalog">
+                            <div class="card-body">
+                                <h5 class="card-title">42.00</h5>
+                                <p class="card-text">Pet Meat Toys-for puppies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441946203_473868528543290_6592782024797383603_n.jpg?stp=dst-jpg_p403x403&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGC_cR4Sir_seo4438Lis6iJgaGN8NV3TYmBoY3w1XdNljZd8LmBLQZzojGiZEKnaONsFstBQ9mePVpQ-5uiZJO&_nc_ohc=Cs8P7011Ft4Q7kNvgHSb2_9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHfTwweILqOhBKjTxi9nE_jUjWW0BV6H0U7pXf1-u7JIg&oe=667E5E1F" class="card-img-top" alt="catalog">
+                            <div class="card-body">
+                                <h5 class="card-title">250.00</h5>
+                                <p class="card-text">Transparent Hamster Cage, Plastic Specialized Home for Hamster</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid bg-white py-3" id="offer">
+                    <div class="row">
+                        <div class="col-md-3" >
+                            <div class="card">
+                                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/436690462_1581073322462238_257795126794078253_n.jpg?stp=dst-jpg_p403x403&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEqDvp8tpXBw-EuoObYKEGWeig0jyVnKlF6KDSPJWcqUaFyYSrNFY2wuGzbEB0ePoE6sVeU_EQwP9dbI0Lnfyy6&_nc_ohc=YjGJwSsKk-gQ7kNvgFX8eHG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFYxs5yasHzXQkU6PsONKLxXGdi3EbDcOaD73fMculyFQ&oe=667E4B8C" class="card-img-top" id="last" alt="sched">
+                                <div class="card-body">
+                                    <h5 class="card-title">89.00</h5>
+                                    <p class="card-text">Pedigree steak and Vegetables</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="last1">
+                            <div class="card">
+                                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/441940137_1004093631253619_8564066012768246347_n.jpg?stp=dst-jpg_p403x403&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFEIKke6wsMEIbNADNH6x_Lo2AJlCw1qyijYAmULDWrKN-my-Ghfo4wwaE7ImhfTz5Jj2BQ-MzOs9kyCr3e7c8Y&_nc_ohc=l4C4baR8rxsQ7kNvgFwmHAP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGEgRUQOjQsXQnCpagj5yXKlqwn2KbMaeHDfDSvnmucRw&oe=667E51AD" class="card-img-top" id="dispenser_img" alt="record-keeping">
+                                <div class="card-body">
+                                    <h5 class="card-title">550.00</h5>
+                                    <p class="card-text"> Size 1 Pet Carrier Travel Cage Dog Cat Crates airline Approved safe and secure
+                                        </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/370350717_1369219197325367_3433077035409990659_n.jpg?stp=dst-jpg_s180x540&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHoNGnCXP2X_zErAQYcaPHi1qCvVFbt5LzWoK9UVu3kvHF9h70-phTuZkgW9NQMQ_FpykNbh1qBbgg9unvA1DKp&_nc_ohc=imFS3I0hIQoQ7kNvgENKlis&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG8RQqjy6AaSH_XOQUAOLQ21VgCl2mQqnXtisN_2Vm4sA&oe=667FACBE" class="card-img-top" id="dispenser_img" alt="record-keeping">
+                                <div class="card-body">
+                                    <h5 class="card-title">200.00</h5>
+                                    <p class="card-text">Dono Carbon Fiber Pet Training Pee Pad</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/445735433_1097139441364557_1909721907376804204_n.jpg?stp=dst-jpg_p206x206&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGbKWSXK6tZRdpH61nDTeUv0V8CUGvMhLnRXwJQa8yEuT2mMKPUF4kqNDZM5ObXVN8NqB3B6A1DUc61oMHh1dsZ&_nc_ohc=yUjjVWJjhdQQ7kNvgFllX6v&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QG2uxVe-82GHnyCl7Qkahv1YvgLnc_nvnKs9dG5yC7t_w&oe=667FDF63" class="card-img-top" alt="catalog">
+                                <div class="card-body">
+                                    <h5 class="card-title">150.00</h5>
+                                    <p class="card-text">Pet Precision Nail Scissor Safe Dog Cat Grooming Trimmer Portable Mini LED Light</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footerContainer pt-4 bg-dark" id="footer">
+                        <div class="row">
+                            <div class="col">
+                            <h3>Contact Us</h3>
+                            <p class="contact">Email:VetPro@example.com</p>
+                            <p class="contact">Phone:+132 57689 829374</p>
+                            <p class="contact">Address: 30th Street corner 11th Avenue, <br>
+                                Bonifacio Global City,<br> Taguig City, Metro Manila</p>
+                                </div>
+                        
+                        <div class="col">
+                            <h3>Quick Links</h3>
+                            <ul class="list">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Products</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Follow Us</h3>
+                            <ul class="social-icons">
+                            <li><a href="facebook.png"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="instagram.png"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="twitter.png"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="social.png"><i class="fa-brands fa-google-plus"></i></a></li>
+                            <li><a href="youtube.png"><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="footerBottom">
+                        <p> &copy;2023 PawPect Pets. All rights reserved.</p>
+                    </div>
+                </footer>
+            </body>
+</html>
